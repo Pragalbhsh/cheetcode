@@ -1,0 +1,110 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Topic {
+  id          String    @id @default(uuid())
+  name        String    @unique
+  orderIndex  Int       @unique
+  createdAt   DateTime  @default(now())
+
+  problems    Problem[]
+  users       User[]    @relation("CurrentTopic")
+}
+
+model Problem {
+  id            String      @id @default(uuid())
+  title         String
+  topicId       String
+  topic         Topic       @relation(fields: [topicId], references: [id])
+  difficulty    Difficulty
+  platform      Platform
+  leetcodeSlug  String?
+  gfgSlug       String?
+  sheet         Sheet
+  orderIndex    Int
+
+  userProgress      UserProgress[]
+  revisionSchedule  RevisionSchedule[]
+}
+
+model User {
+  id                String    @id @default(uuid())
+  email             String    @unique
+  username          String    @unique
+  passwordHash      String
+  leetcodeUsername  String?
+  gfgUsername       String?
+  currentTopicId    String?
+  currentTopic      Topic?    @relation("CurrentTopic", fields: [currentTopicId], references: [id])
+  streakProtector   Boolean   @default(false)
+  createdAt         DateTime  @default(now())
+
+  userProgress      UserProgress[]
+  revisionSchedule  RevisionSchedule[]
+}
+
+model UserProgress {
+  id            String        @id @default(uuid())
+  userId        String
+  user          User          @relation(fields: [userId], references: [id])
+  problemId     String
+  problem       Problem       @relation(fields: [problemId], references: [id])
+  status        SolveStatus
+  solvedAt      DateTime?
+  autoImported  Boolean       @default(false)
+
+  @@unique([userId, problemId])
+}
+
+model RevisionSchedule {
+  id             String      @id @default(uuid())
+  userId         String
+  user           User        @relation(fields: [userId], references: [id])
+  problemId      String
+  problem        Problem     @relation(fields: [problemId], references: [id])
+  nextReviewDate DateTime    @default(now())
+  intervalDays   Int         @default(1)
+  easeFactor     Float       @default(2.5)
+  repetitions    Int         @default(0)
+  lastRating     Rating?
+  createdAt      DateTime    @default(now())
+  updatedAt      DateTime    @updatedAt
+
+  @@unique([userId, problemId])
+}
+
+enum Difficulty {
+  EASY
+  MEDIUM
+  HARD
+}
+
+enum Platform {
+  LEETCODE
+  GFG
+  BOTH
+}
+
+enum Sheet {
+  STRIVER
+  NEETCODE_150
+  BOTH
+}
+
+enum SolveStatus {
+  SOLVED
+  ATTEMPTED
+  SKIPPED
+}
+
+enum Rating {
+  FORGOT
+  HARD
+  OKAY
+  EASY
+}
