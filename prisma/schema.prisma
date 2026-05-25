@@ -28,6 +28,7 @@ model Problem {
   gfgSlug       String?
   sheet         Sheet
   orderIndex    Int
+  @@unique([title, topicId])
 
   userProgress      UserProgress[]
   revisionSchedule  RevisionSchedule[]
