@@ -1,4 +1,5 @@
 import express from 'express'
+import authRouter from './auth.js'
 import { getDailySession } from './daily.js'
 
 const app = express()
@@ -6,8 +7,10 @@ const PORT = 3000
 
 app.use(express.json())
 
+app.use('/auth', authRouter)
+
 app.get('/', (req, res) => {
-  res.json({ message: 'Cheatcode API is live' })
+  res.json({ message: 'Cheatcode API is live 🔥' })
 })
 
 app.get('/daily/:userId', async (req, res) => {
@@ -16,7 +19,6 @@ app.get('/daily/:userId', async (req, res) => {
   res.json(session)
 })
 
-
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`)
-}) 
+})
