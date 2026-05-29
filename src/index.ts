@@ -78,7 +78,7 @@ app.post('/problem/solve', async (req, res) => {
   const { userId, problemId } = req.body
 
   // mark problem as solved in user_progress
-  await prisma.userProgres
+  await prisma.userProgress.upsert({
     where: { userId_problemId: { userId, problemId } },
     update: { status: 'SOLVED', solvedAt: new Date() },
     create: { userId, problemId, status: 'SOLVED', solvedAt: new Date() }
