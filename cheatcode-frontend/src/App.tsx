@@ -1,8 +1,13 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Landing from './pages/Landing'
+
 function App() {
   return (
-    <div className="flex items-center justify-center h-screen bg-black">
-      <h1 className="text-4xl font-bold text-white">Cheatcode 🔥</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
