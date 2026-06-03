@@ -1,4 +1,6 @@
+import { useNavigate } from 'react-router-dom'
 function Login() {
+    const navigate = useNavigate() 
     return (
       <div className="min-h-screen bg-gray-950 flex items-center justify-center">
         <div className="bg-gray-900 p-8 rounded-2xl w-full max-w-md shadow-xl">
@@ -21,7 +23,7 @@ function Login() {
             </button>
             <p className="text-gray-400 text-center text-sm">
               Don't have an account?{' '}
-              <span className="text-indigo-400 cursor-pointer hover:underline">Register</span>
+              <span onClick={() => navigate('/register')} className="text-indigo-400 cursor-pointer hover:underline">Register</span>
             </p>
           </div>
         </div>

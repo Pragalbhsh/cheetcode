@@ -1,4 +1,6 @@
+import { useNavigate } from 'react-router-dom'
 function Landing() {
+    const navigate = useNavigate()
     return (
       <div className="min-h-screen bg-gray-950 text-white">
   
@@ -6,7 +8,7 @@ function Landing() {
         <nav className="flex justify-between items-center px-8 py-5 border-b border-gray-800">
           <h1 className="text-xl font-bold text-indigo-400">Cheatcode 🔥</h1>
           <div className="flex gap-4">
-            <button className="text-gray-400 hover:text-white transition">Login</button>
+          <button onClick={() => navigate('/login')} className="text-gray-400 hover:text-white transition">Login</button>
             <button className="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-xl transition">
               Get Started
             </button>
