@@ -27,11 +27,27 @@ function Daily() {
             <p className="text-gray-400 text-sm mb-4">{session.revisionQuestion.difficulty}</p>
             <a href={`https://leetcode.com/problems/${session.revisionQuestion.leetcodeSlug}`} target="_blank" className="text-indigo-400 hover:underline text-sm">Open on LeetCode →</a>
             <div className="flex gap-3 mt-6">
-              <button className="flex-1 bg-red-900 hover:bg-red-800 text-red-300 py-2 rounded-xl text-sm transition">Forgot</button>
-              <button className="flex-1 bg-yellow-900 hover:bg-yellow-800 text-yellow-300 py-2 rounded-xl text-sm transition">Hard</button>
-              <button className="flex-1 bg-blue-900 hover:bg-blue-800 text-blue-300 py-2 rounded-xl text-sm transition">Okay</button>
-              <button className="flex-1 bg-green-900 hover:bg-green-800 text-green-300 py-2 rounded-xl text-sm transition">Easy</button>
-            </div>
+             {['FORGOT', 'HARD', 'OKAY', 'EASY'].map((rating) => (
+             <button
+               key={rating}
+                onClick={async () => {
+                  await fetch('http://localhost:3000/revision/rate', {
+                  method: 'POST',
+                 headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  userId,
+                  problemId: session.revisionQuestion.id,
+                  rating
+          })
+        })
+        alert(`Marked as ${rating}!`)
+      }}
+      className="flex-1 bg-gray-800 hover:bg-indigo-600 text-white py-2 rounded-xl text-sm transition"
+    >
+      {rating}
+    </button>
+  ))}
+</div>
           </div>
         ) : (
           <div className="bg-gray-900 rounded-2xl p-6 mb-6 text-gray-400">No revision due today 🎉</div>
