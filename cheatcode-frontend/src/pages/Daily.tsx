@@ -60,6 +60,22 @@ function Daily() {
             <h2 className="text-xl font-semibold mt-3 mb-1">{session.topicQuestion.title}</h2>
             <p className="text-gray-400 text-sm mb-4">{session.topicQuestion.difficulty}</p>
             <a href={`https://leetcode.com/problems/${session.topicQuestion.leetcodeSlug}`} target="_blank" className="text-indigo-400 hover:underline text-sm">Open on LeetCode →</a>
+            <button
+  onClick={async () => {
+    await fetch('http://localhost:3000/problem/solve', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        userId,
+        problemId: session.topicQuestion.id
+      })
+    })
+    alert('Problem marked as solved! ✅')
+  }}
+  className="mt-4 w-full bg-green-800 hover:bg-green-700 text-green-300 font-semibold py-2 rounded-xl transition"
+>
+  Mark as Solved ✅
+</button>
           </div>
         )}
 
