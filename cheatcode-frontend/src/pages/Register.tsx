@@ -20,7 +20,7 @@ function Register() {
     if (data.token) {
       localStorage.setItem('token', data.token)
       localStorage.setItem('userId', data.userId)
-      navigate('/daily')
+      navigate('/onboarding')
     } else {
       setError(data.error)
     }
