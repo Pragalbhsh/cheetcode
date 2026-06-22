@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-
-const navigate = useNavigate()
  
 
 function Daily() {
+  const navigate = useNavigate()
   const [session, setSession] = useState<any>(null)
   const userId = localStorage.getItem('userId')
 
