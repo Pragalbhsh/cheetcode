@@ -95,7 +95,14 @@ app.post('/problem/solve', async (req, res) => {
 
   res.json({ message: 'Problem marked as solved, revision scheduled' })
 })
-
+app.get('/problems/:topicId', async (req, res) => {
+  const { topicId } = req.params
+  const problems = await prisma.problem.findMany({
+    where: { topicId },
+    orderBy: { orderIndex: 'asc' }
+  })
+  res.json(problems)
+})
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`)
 })
