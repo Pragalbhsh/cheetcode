@@ -1,6 +1,9 @@
+"use strict";
 // SM-2 Spaced Repetition Algorithm
 // Rating: 0=FORGOT, 1=HARD, 2=OKAY, 3=EASY
-export function calculateNextReview(input) {
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.calculateNextReview = calculateNextReview;
+function calculateNextReview(input) {
     const { rating, repetitions, easeFactor, intervalDays } = input;
     // convert rating to a number 0-3
     const score = { FORGOT: 0, HARD: 1, OKAY: 2, EASY: 3 }[rating];

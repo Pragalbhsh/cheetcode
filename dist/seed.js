@@ -1,4 +1,9 @@
-import prisma from './prisma.js';
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const prisma_js_1 = __importDefault(require("./prisma.js"));
 const NEETCODE_DATA_URL = 'https://raw.githubusercontent.com/neetcode-gh/leetcode/main/.problemSiteData.json';
 async function seed() {
     console.log('Fetching Neetcode 150 problems...');
@@ -12,7 +17,7 @@ async function seed() {
     console.log('Seeding topics...');
     // create topics first
     for (let i = 0; i < uniqueTopics.length; i++) {
-        await prisma.topic.upsert({
+        await prisma_js_1.default.topic.upsert({
             where: { name: uniqueTopics[i] },
             update: {},
             create: {
@@ -26,7 +31,7 @@ async function seed() {
     // create problems
     let orderCounters = {};
     for (const problem of neetcode150) {
-        const topic = await prisma.topic.findUnique({
+        const topic = await prisma_js_1.default.topic.findUnique({
             where: { name: problem.pattern }
         });
         if (!topic)
@@ -35,7 +40,7 @@ async function seed() {
             orderCounters[topic.id] = 1;
         const difficulty = problem.difficulty.toUpperCase();
         const slug = problem.link?.replace('/', '') ?? '';
-        await prisma.problem.upsert({
+        await prisma_js_1.default.problem.upsert({
             where: {
                 title_topicId: {
                     title: problem.problem,
@@ -55,6 +60,6 @@ async function seed() {
         });
     }
     console.log('Done seeding!');
-    await prisma.$disconnect();
+    await prisma_js_1.default.$disconnect();
 }
 seed().catch(console.error);

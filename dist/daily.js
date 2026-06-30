@@ -1,7 +1,13 @@
-import prisma from './prisma.js';
-export async function getDailySession(userId) {
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getDailySession = getDailySession;
+const prisma_js_1 = __importDefault(require("./prisma.js"));
+async function getDailySession(userId) {
     // 1. get revision question — due today based on SM-2
-    const revisionQuestion = await prisma.revisionSchedule.findFirst({
+    const revisionQuestion = await prisma_js_1.default.revisionSchedule.findFirst({
         where: {
             userId,
             nextReviewDate: {
@@ -16,7 +22,7 @@ export async function getDailySession(userId) {
         }
     });
     // 2. get the user's current topic
-    const user = await prisma.user.findUnique({
+    const user = await prisma_js_1.default.user.findUnique({
         where: { id: userId },
         include: { currentTopic: true }
     });
@@ -24,7 +30,7 @@ export async function getDailySession(userId) {
         return { error: 'User or current topic not found' };
     }
     // 3. get today's topic question — next unsolved problem in current topic
-    const topicQuestion = await prisma.problem.findFirst({
+    const topicQuestion = await prisma_js_1.default.problem.findFirst({
         where: {
             topicId: user.currentTopicId,
             userProgress: {
@@ -40,14 +46,14 @@ export async function getDailySession(userId) {
     // 4. streak protector — random easy or medium problem in current topic
     let streakQuestion = null;
     if (user.streakProtector) {
-        const count = await prisma.problem.count({
+        const count = await prisma_js_1.default.problem.count({
             where: {
                 topicId: user.currentTopicId,
                 difficulty: { in: ['EASY', 'MEDIUM'] }
             }
         });
         const skip = Math.floor(Math.random() * count);
-        streakQuestion = await prisma.problem.findFirst({
+        streakQuestion = await prisma_js_1.default.problem.findFirst({
             where: {
                 topicId: user.currentTopicId,
                 difficulty: { in: ['EASY', 'MEDIUM'] }
