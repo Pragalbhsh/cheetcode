@@ -7,7 +7,7 @@ function Register() {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const handleRegister = async () => {
-        const res = await fetch('http://localhost:3000/auth/register', {
+        const res = await fetch('https://cheetcode-api.onrender.com/auth/register', {
             method: 'POST', // POST request to the server to register the user
             headers: { 'Content-Type': 'application/json' }, // headers are the additional information that are sent with the request like the data iam sending is json type.
             body: JSON.stringify({ email, username, password }) // body is the data that is sent with the request

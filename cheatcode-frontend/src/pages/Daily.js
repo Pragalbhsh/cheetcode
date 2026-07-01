@@ -5,7 +5,7 @@ function Daily() {
     const [session, setSession] = useState(null);
     const userId = localStorage.getItem('userId');
     useEffect(() => {
-        fetch(`http://localhost:3000/daily/${userId}`)
+        fetch(`https://cheetcode-api.onrender.com/daily/${userId}`)
             .then(res => res.json())
             .then(data => setSession(data));
     }, []);
@@ -36,7 +36,7 @@ function Daily() {
             <a href={`https://leetcode.com/problems/${session.revisionQuestion.leetcodeSlug}`} target="_blank" className="text-indigo-400 hover:underline text-sm">Open on LeetCode →</a>
             <div className="flex gap-3 mt-6">
              {['FORGOT', 'HARD', 'OKAY', 'EASY'].map((rating) => (<button key={rating} onClick={async () => {
-                    await fetch('http://localhost:3000/revision/rate', {
+                    await fetch('https://cheetcode-api.onrender.com/revision/rate', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({
@@ -59,7 +59,7 @@ function Daily() {
             <p className="text-gray-400 text-sm mb-4">{session.topicQuestion.difficulty}</p>
             <a href={`https://leetcode.com/problems/${session.topicQuestion.leetcodeSlug}`} target="_blank" className="text-indigo-400 hover:underline text-sm">Open on LeetCode →</a>
             <button onClick={async () => {
-                await fetch('http://localhost:3000/problem/solve', {
+                await fetch('https://cheetcode-api.onrender.com/problem/solve', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({

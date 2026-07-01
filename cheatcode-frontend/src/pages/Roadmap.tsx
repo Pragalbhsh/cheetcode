@@ -8,7 +8,7 @@ function Roadmap() {
   const navigate = useNavigate()
 
   useEffect(() => {
-    fetch('http://localhost:3000/topics')
+    fetch('https://cheetcode-api.onrender.com/topics')
       .then(res => res.json())
       .then(data => setTopics(data))
   }, [])
@@ -19,7 +19,7 @@ function Roadmap() {
       return
     }
     if (!problems[topicId]) {
-      const res = await fetch(`http://localhost:3000/problems/${topicId}`)
+      const res = await fetch(`https://cheetcode-api.onrender.com/problems/${topicId}`)
       const data = await res.json()
       setProblems(prev => ({ ...prev, [topicId]: data }))
     }

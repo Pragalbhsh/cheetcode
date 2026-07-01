@@ -6,12 +6,12 @@ function Onboarding() {
     const [showTopics, setShowTopics] = useState(false);
     const userId = localStorage.getItem('userId');
     useEffect(() => {
-        fetch('http://localhost:3000/topics')
+        fetch('https://cheetcode-api.onrender.com/topics')
             .then(res => res.json())
             .then(data => setTopics(data));
     }, []);
     const selectTopic = async (topicId) => {
-        await fetch('http://localhost:3000/user/topic', {
+        await fetch('https://cheetcode-api.onrender.com/user/topic', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ userId, topicId })

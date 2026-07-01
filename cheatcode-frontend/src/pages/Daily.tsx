@@ -8,7 +8,7 @@ function Daily() {
   const userId = localStorage.getItem('userId')
 
   useEffect(() => {
-    fetch(`http://localhost:3000/daily/${userId}`)
+    fetch(`https://cheetcode-api.onrender.com/daily/${userId}`)
       .then(res => res.json())
       .then(data => setSession(data))
   }, [])
@@ -51,7 +51,7 @@ function Daily() {
              <button
                key={rating}
                 onClick={async () => {
-                  await fetch('http://localhost:3000/revision/rate', {
+                  await fetch('https://cheetcode-api.onrender.com/revision/rate', {
                   method: 'POST',
                  headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -82,7 +82,7 @@ function Daily() {
             <a href={`https://leetcode.com/problems/${session.topicQuestion.leetcodeSlug}`} target="_blank" className="text-indigo-400 hover:underline text-sm">Open on LeetCode →</a>
             <button
   onClick={async () => {
-    await fetch('http://localhost:3000/problem/solve', {
+    await fetch('https://cheetcode-api.onrender.com/problem/solve', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
