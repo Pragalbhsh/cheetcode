@@ -26,7 +26,6 @@ function App() {
             <Daily />
           </ProtectedRoute>
         } />
-        <Route path="/roadmap" element={<Roadmap />} />
       </Routes>
     </BrowserRouter>
   )
