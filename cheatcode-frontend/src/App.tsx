@@ -1,3 +1,4 @@
+import React from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Landing from './pages/Landing'
 import Login from './pages/Login'
@@ -6,7 +7,7 @@ import Onboarding from './pages/Onboarding'
 import Daily from './pages/Daily'
 import Roadmap from './pages/Roadmap'
 
-const ProtectedRoute = ({ children }: { children: JSX.Element }) => {
+const ProtectedRoute = ({ children }: { children: React.ReactElement }) => {
   const userId = localStorage.getItem('userId')
   return userId ? children : <Navigate to="/login" />
 }
