@@ -1,62 +1,86 @@
-import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useState, type FormEvent } from 'react'
+import { Link, useNavigate, useSearchParams } from 'react-router-dom'
+import { PasswordInput } from '../components/PasswordInput'
+import { Button, Field, inputClass } from '../components/ui'
+import { api, errorMessage } from '../lib/api'
+import { saveSession } from '../lib/auth'
+import type { AuthResponse } from '../lib/types'
+import { AuthShell } from './AuthShell'
+
+function safeNext(value: string | null) {
+  // Only allow in-app paths (no open redirects).
+  return value && value.startsWith('/') && !value.startsWith('//') ? value : '/daily'
+}
 
 function Login() {
   const navigate = useNavigate()
-  const [email, setEmail] = useState('')
+  const [params] = useSearchParams()
+  const [identifier, setIdentifier] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
+  const [loading, setLoading] = useState(false)
 
-  const handleLogin = async () => {
-    const res = await fetch('https://cheetcode-api.onrender.com/auth/login', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, password })
-    })
-
-    const data = await res.json()
-
-    if (data.token) {
-      localStorage.setItem('token', data.token)
-      localStorage.setItem('userId', data.userId)
-      navigate('/daily')
-    } else {
-      setError(data.error)
+  const handleSubmit = async (event: FormEvent) => {
+    event.preventDefault()
+    setError('')
+    setLoading(true)
+    try {
+      const session = await api<AuthResponse>('/auth/login', {
+        method: 'POST',
+        body: { identifier: identifier.trim(), password },
+      })
+      saveSession(session)
+      navigate(safeNext(params.get('next')), { replace: true })
+    } catch (err) {
+      setError(errorMessage(err))
+      setLoading(false)
     }
   }
 
   return (
-    <div className="min-h-screen bg-gray-950 flex items-center justify-center">
-      <div className="bg-gray-900 p-8 rounded-2xl w-full max-w-md shadow-xl">
-        <h1 className="text-3xl font-bold text-white mb-2">Welcome back 👋</h1>
-        <p className="text-gray-400 mb-8">Login to your Cheatcode account</p>
-
-        <div className="flex flex-col gap-4">
+    <AuthShell title="Welcome back 👋" subtitle="Log in to continue your streak">
+      {params.get('expired') && (
+        <p className="mb-5 rounded-xl border border-amber-500/30 bg-amber-500/10 px-4 py-3 text-sm text-amber-200">
+          Your session expired. Please log in again.
+        </p>
+      )}
+      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+        <Field label="Email or username">
           <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="bg-gray-800 text-white px-4 py-3 rounded-xl outline-none focus:ring-2 focus:ring-indigo-500"
+            autoFocus
+            required
+            autoComplete="username"
+            value={identifier}
+            onChange={(e) => setIdentifier(e.target.value)}
+            className={inputClass}
+            placeholder="you@example.com"
           />
-          <input
-            type="password"
-            placeholder="Password"
+        </Field>
+        <Field label="Password">
+          <PasswordInput
+            required
+            autoComplete="current-password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="bg-gray-800 text-white px-4 py-3 rounded-xl outline-none focus:ring-2 focus:ring-indigo-500"
+            placeholder="Your password"
           />
-          {error && <p className="text-red-400 text-sm">{error}</p>}
-          <button onClick={handleLogin} className="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 rounded-xl transition">
-            Login
-          </button>
-          <p className="text-gray-400 text-center text-sm">
-            Don't have an account?{' '}
-            <span onClick={() => navigate('/register')} className="text-indigo-400 cursor-pointer hover:underline">Register</span>
+        </Field>
+        {error && (
+          <p role="alert" className="text-sm text-rose-300">
+            {error}
           </p>
-        </div>
-      </div>
-    </div>
+        )}
+        <Button type="submit" size="lg" loading={loading} className="mt-1">
+          Log in
+        </Button>
+        <p className="text-center text-sm text-zinc-400">
+          New here?{' '}
+          <Link to="/register" className="font-medium text-indigo-300 hover:underline">
+            Create an account
+          </Link>
+        </p>
+      </form>
+    </AuthShell>
   )
 }
 

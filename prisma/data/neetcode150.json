@@ -1,0 +1,1525 @@
+{
+ "source": "https://github.com/neetcode-gh/leetcode (.problemSiteData.json)",
+ "topics": [
+  "Arrays & Hashing",
+  "Two Pointers",
+  "Sliding Window",
+  "Stack",
+  "Binary Search",
+  "Linked List",
+  "Trees",
+  "Tries",
+  "Heap / Priority Queue",
+  "Backtracking",
+  "Graphs",
+  "Advanced Graphs",
+  "1-D Dynamic Programming",
+  "2-D Dynamic Programming",
+  "Greedy",
+  "Intervals",
+  "Math & Geometry",
+  "Bit Manipulation"
+ ],
+ "problems": [
+  {
+   "title": "Contains Duplicate",
+   "topic": "Arrays & Hashing",
+   "difficulty": "EASY",
+   "leetcodeSlug": "contains-duplicate",
+   "videoId": "3OamzN90kPg",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Valid Anagram",
+   "topic": "Arrays & Hashing",
+   "difficulty": "EASY",
+   "leetcodeSlug": "valid-anagram",
+   "videoId": "9UtInBqnCgA",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Two Sum",
+   "topic": "Arrays & Hashing",
+   "difficulty": "EASY",
+   "leetcodeSlug": "two-sum",
+   "videoId": "KLlXCFG5TnA",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Group Anagrams",
+   "topic": "Arrays & Hashing",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "group-anagrams",
+   "videoId": "vzdNOK2oB2E",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Top K Frequent Elements",
+   "topic": "Arrays & Hashing",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "top-k-frequent-elements",
+   "videoId": "YPTqKIgVk-k",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Product of Array Except Self",
+   "topic": "Arrays & Hashing",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "product-of-array-except-self",
+   "videoId": "bNvIQI2wAjk",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Valid Sudoku",
+   "topic": "Arrays & Hashing",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "valid-sudoku",
+   "videoId": "TjFXEUCMqI8",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Encode and Decode Strings",
+   "topic": "Arrays & Hashing",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "encode-and-decode-strings",
+   "videoId": "B1k_sxOSgv8",
+   "freeLink": "https://www.lintcode.com/problem/659/",
+   "premium": true,
+   "blind75": true
+  },
+  {
+   "title": "Longest Consecutive Sequence",
+   "topic": "Arrays & Hashing",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "longest-consecutive-sequence",
+   "videoId": "P6RZZMu_maU",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Valid Palindrome",
+   "topic": "Two Pointers",
+   "difficulty": "EASY",
+   "leetcodeSlug": "valid-palindrome",
+   "videoId": "jJXJ16kPFWg",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Two Sum II Input Array Is Sorted",
+   "topic": "Two Pointers",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "two-sum-ii-input-array-is-sorted",
+   "videoId": "cQ1Oz4ckceM",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "3Sum",
+   "topic": "Two Pointers",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "3sum",
+   "videoId": "jzZsG8n2R9A",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Container With Most Water",
+   "topic": "Two Pointers",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "container-with-most-water",
+   "videoId": "UuiTKBwPgAo",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Trapping Rain Water",
+   "topic": "Two Pointers",
+   "difficulty": "HARD",
+   "leetcodeSlug": "trapping-rain-water",
+   "videoId": "ZI2z5pq0TqA",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Best Time to Buy And Sell Stock",
+   "topic": "Sliding Window",
+   "difficulty": "EASY",
+   "leetcodeSlug": "best-time-to-buy-and-sell-stock",
+   "videoId": "1pkOgXD63yU",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Longest Substring Without Repeating Characters",
+   "topic": "Sliding Window",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "longest-substring-without-repeating-characters",
+   "videoId": "wiGpQwVHdE0",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Longest Repeating Character Replacement",
+   "topic": "Sliding Window",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "longest-repeating-character-replacement",
+   "videoId": "gqXU1UyA8pk",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Permutation In String",
+   "topic": "Sliding Window",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "permutation-in-string",
+   "videoId": "UbyhOgBN834",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Minimum Window Substring",
+   "topic": "Sliding Window",
+   "difficulty": "HARD",
+   "leetcodeSlug": "minimum-window-substring",
+   "videoId": "jSto0O4AJbM",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Sliding Window Maximum",
+   "topic": "Sliding Window",
+   "difficulty": "HARD",
+   "leetcodeSlug": "sliding-window-maximum",
+   "videoId": "DfljaUwZsOk",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Valid Parentheses",
+   "topic": "Stack",
+   "difficulty": "EASY",
+   "leetcodeSlug": "valid-parentheses",
+   "videoId": "WTzjTskDFMg",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Min Stack",
+   "topic": "Stack",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "min-stack",
+   "videoId": "qkLl7nAwDPo",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Evaluate Reverse Polish Notation",
+   "topic": "Stack",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "evaluate-reverse-polish-notation",
+   "videoId": "iu0082c4HDE",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Generate Parentheses",
+   "topic": "Stack",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "generate-parentheses",
+   "videoId": "s9fokUqJ76A",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Daily Temperatures",
+   "topic": "Stack",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "daily-temperatures",
+   "videoId": "cTBiBSnjO3c",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Car Fleet",
+   "topic": "Stack",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "car-fleet",
+   "videoId": "Pr6T-3yB9RM",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Largest Rectangle In Histogram",
+   "topic": "Stack",
+   "difficulty": "HARD",
+   "leetcodeSlug": "largest-rectangle-in-histogram",
+   "videoId": "zx5Sw9130L0",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Binary Search",
+   "topic": "Binary Search",
+   "difficulty": "EASY",
+   "leetcodeSlug": "binary-search",
+   "videoId": "s4DPM8ct1pI",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Search a 2D Matrix",
+   "topic": "Binary Search",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "search-a-2d-matrix",
+   "videoId": "Ber2pi2C0j0",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Koko Eating Bananas",
+   "topic": "Binary Search",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "koko-eating-bananas",
+   "videoId": "U2SozAs9RzA",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Find Minimum In Rotated Sorted Array",
+   "topic": "Binary Search",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "find-minimum-in-rotated-sorted-array",
+   "videoId": "nIVW4P8b1VA",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Search In Rotated Sorted Array",
+   "topic": "Binary Search",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "search-in-rotated-sorted-array",
+   "videoId": "U8XENwh8Oy8",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Time Based Key Value Store",
+   "topic": "Binary Search",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "time-based-key-value-store",
+   "videoId": "fu2cD_6E8Hw",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Median of Two Sorted Arrays",
+   "topic": "Binary Search",
+   "difficulty": "HARD",
+   "leetcodeSlug": "median-of-two-sorted-arrays",
+   "videoId": "q6IEA26hvXc",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Reverse Linked List",
+   "topic": "Linked List",
+   "difficulty": "EASY",
+   "leetcodeSlug": "reverse-linked-list",
+   "videoId": "G0_I-ZF0S38",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Merge Two Sorted Lists",
+   "topic": "Linked List",
+   "difficulty": "EASY",
+   "leetcodeSlug": "merge-two-sorted-lists",
+   "videoId": "XIdigk956u0",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Reorder List",
+   "topic": "Linked List",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "reorder-list",
+   "videoId": "S5bfdUTrKLM",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Remove Nth Node From End of List",
+   "topic": "Linked List",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "remove-nth-node-from-end-of-list",
+   "videoId": "XVuQxVej6y8",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Copy List With Random Pointer",
+   "topic": "Linked List",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "copy-list-with-random-pointer",
+   "videoId": "5Y2EiZST97Y",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Add Two Numbers",
+   "topic": "Linked List",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "add-two-numbers",
+   "videoId": "wgFPrzTjm7s",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Linked List Cycle",
+   "topic": "Linked List",
+   "difficulty": "EASY",
+   "leetcodeSlug": "linked-list-cycle",
+   "videoId": "gBTe7lFR3vc",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Find The Duplicate Number",
+   "topic": "Linked List",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "find-the-duplicate-number",
+   "videoId": "wjYnzkAhcNk",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "LRU Cache",
+   "topic": "Linked List",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "lru-cache",
+   "videoId": "7ABFKPK2hD4",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Merge K Sorted Lists",
+   "topic": "Linked List",
+   "difficulty": "HARD",
+   "leetcodeSlug": "merge-k-sorted-lists",
+   "videoId": "q5a5OiGbT6Q",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Reverse Nodes In K Group",
+   "topic": "Linked List",
+   "difficulty": "HARD",
+   "leetcodeSlug": "reverse-nodes-in-k-group",
+   "videoId": "1UOPsfP85V4",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Invert Binary Tree",
+   "topic": "Trees",
+   "difficulty": "EASY",
+   "leetcodeSlug": "invert-binary-tree",
+   "videoId": "OnSn2XEQ4MY",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Maximum Depth of Binary Tree",
+   "topic": "Trees",
+   "difficulty": "EASY",
+   "leetcodeSlug": "maximum-depth-of-binary-tree",
+   "videoId": "hTM3phVI6YQ",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Diameter of Binary Tree",
+   "topic": "Trees",
+   "difficulty": "EASY",
+   "leetcodeSlug": "diameter-of-binary-tree",
+   "videoId": "bkxqA8Rfv04",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Balanced Binary Tree",
+   "topic": "Trees",
+   "difficulty": "EASY",
+   "leetcodeSlug": "balanced-binary-tree",
+   "videoId": "QfJsau0ItOY",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Same Tree",
+   "topic": "Trees",
+   "difficulty": "EASY",
+   "leetcodeSlug": "same-tree",
+   "videoId": "vRbbcKXCxOw",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Subtree of Another Tree",
+   "topic": "Trees",
+   "difficulty": "EASY",
+   "leetcodeSlug": "subtree-of-another-tree",
+   "videoId": "E36O5SWp-LE",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Lowest Common Ancestor of a Binary Search Tree",
+   "topic": "Trees",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "lowest-common-ancestor-of-a-binary-search-tree",
+   "videoId": "gs2LMfuOR9k",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Binary Tree Level Order Traversal",
+   "topic": "Trees",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "binary-tree-level-order-traversal",
+   "videoId": "6ZnyEApgFYg",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Binary Tree Right Side View",
+   "topic": "Trees",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "binary-tree-right-side-view",
+   "videoId": "d4zLyf32e3I",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Count Good Nodes In Binary Tree",
+   "topic": "Trees",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "count-good-nodes-in-binary-tree",
+   "videoId": "7cp5imvDzl4",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Validate Binary Search Tree",
+   "topic": "Trees",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "validate-binary-search-tree",
+   "videoId": "s6ATEkipzow",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Kth Smallest Element In a Bst",
+   "topic": "Trees",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "kth-smallest-element-in-a-bst",
+   "videoId": "5LUXSvjmGCw",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Construct Binary Tree From Preorder And Inorder Traversal",
+   "topic": "Trees",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "construct-binary-tree-from-preorder-and-inorder-traversal",
+   "videoId": "ihj4IQGZ2zc",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Binary Tree Maximum Path Sum",
+   "topic": "Trees",
+   "difficulty": "HARD",
+   "leetcodeSlug": "binary-tree-maximum-path-sum",
+   "videoId": "Hr5cWUld4vU",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Serialize And Deserialize Binary Tree",
+   "topic": "Trees",
+   "difficulty": "HARD",
+   "leetcodeSlug": "serialize-and-deserialize-binary-tree",
+   "videoId": "u4JAi2JJhI8",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Implement Trie Prefix Tree",
+   "topic": "Tries",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "implement-trie-prefix-tree",
+   "videoId": "oobqoCJlHA0",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Design Add And Search Words Data Structure",
+   "topic": "Tries",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "design-add-and-search-words-data-structure",
+   "videoId": "BTf05gs_8iU",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Word Search II",
+   "topic": "Tries",
+   "difficulty": "HARD",
+   "leetcodeSlug": "word-search-ii",
+   "videoId": "asbcE9mZz_U",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Kth Largest Element In a Stream",
+   "topic": "Heap / Priority Queue",
+   "difficulty": "EASY",
+   "leetcodeSlug": "kth-largest-element-in-a-stream",
+   "videoId": "hOjcdrqMoQ8",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Last Stone Weight",
+   "topic": "Heap / Priority Queue",
+   "difficulty": "EASY",
+   "leetcodeSlug": "last-stone-weight",
+   "videoId": "B-QCq79-Vfw",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "K Closest Points to Origin",
+   "topic": "Heap / Priority Queue",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "k-closest-points-to-origin",
+   "videoId": "rI2EBUEMfTk",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Kth Largest Element In An Array",
+   "topic": "Heap / Priority Queue",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "kth-largest-element-in-an-array",
+   "videoId": "XEmy13g1Qxc",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Task Scheduler",
+   "topic": "Heap / Priority Queue",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "task-scheduler",
+   "videoId": "s8p8ukTyA2I",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Design Twitter",
+   "topic": "Heap / Priority Queue",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "design-twitter",
+   "videoId": "pNichitDD2E",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Find Median From Data Stream",
+   "topic": "Heap / Priority Queue",
+   "difficulty": "HARD",
+   "leetcodeSlug": "find-median-from-data-stream",
+   "videoId": "itmhHWaHupI",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Subsets",
+   "topic": "Backtracking",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "subsets",
+   "videoId": "REOH22Xwdkk",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Combination Sum",
+   "topic": "Backtracking",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "combination-sum",
+   "videoId": "GBKI9VSKdGg",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Permutations",
+   "topic": "Backtracking",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "permutations",
+   "videoId": "s7AvT7cGdSo",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Subsets II",
+   "topic": "Backtracking",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "subsets-ii",
+   "videoId": "Vn2v6ajA7U0",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Combination Sum II",
+   "topic": "Backtracking",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "combination-sum-ii",
+   "videoId": "rSA3t6BDDwg",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Word Search",
+   "topic": "Backtracking",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "word-search",
+   "videoId": "pfiQ_PS1g8E",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Palindrome Partitioning",
+   "topic": "Backtracking",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "palindrome-partitioning",
+   "videoId": "3jvWodd7ht0",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Letter Combinations of a Phone Number",
+   "topic": "Backtracking",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "letter-combinations-of-a-phone-number",
+   "videoId": "0snEunUacZY",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "N Queens",
+   "topic": "Backtracking",
+   "difficulty": "HARD",
+   "leetcodeSlug": "n-queens",
+   "videoId": "Ph95IHmRp5M",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Number of Islands",
+   "topic": "Graphs",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "number-of-islands",
+   "videoId": "pV2kpPD66nE",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Clone Graph",
+   "topic": "Graphs",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "clone-graph",
+   "videoId": "mQeF6bN8hMk",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Max Area of Island",
+   "topic": "Graphs",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "max-area-of-island",
+   "videoId": "iJGr1OtmH0c",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Pacific Atlantic Water Flow",
+   "topic": "Graphs",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "pacific-atlantic-water-flow",
+   "videoId": "s-VkcjHqkGI",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Surrounded Regions",
+   "topic": "Graphs",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "surrounded-regions",
+   "videoId": "9z2BunfoZ5Y",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Rotting Oranges",
+   "topic": "Graphs",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "rotting-oranges",
+   "videoId": "y704fEOx0s0",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Walls And Gates",
+   "topic": "Graphs",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "walls-and-gates",
+   "videoId": "e69C6xhiSQE",
+   "freeLink": "https://www.lintcode.com/problem/663/",
+   "premium": true,
+   "blind75": false
+  },
+  {
+   "title": "Course Schedule",
+   "topic": "Graphs",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "course-schedule",
+   "videoId": "EgI5nU9etnU",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Course Schedule II",
+   "topic": "Graphs",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "course-schedule-ii",
+   "videoId": "Akt3glAwyfY",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Redundant Connection",
+   "topic": "Graphs",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "redundant-connection",
+   "videoId": "FXWRE67PLL0",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Number of Connected Components In An Undirected Graph",
+   "topic": "Graphs",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "number-of-connected-components-in-an-undirected-graph",
+   "videoId": "8f1XPm4WOUc",
+   "freeLink": "https://www.lintcode.com/problem/3651/",
+   "premium": true,
+   "blind75": true
+  },
+  {
+   "title": "Graph Valid Tree",
+   "topic": "Graphs",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "graph-valid-tree",
+   "videoId": "bXsUuownnoQ",
+   "freeLink": "https://www.lintcode.com/problem/178/",
+   "premium": true,
+   "blind75": true
+  },
+  {
+   "title": "Word Ladder",
+   "topic": "Graphs",
+   "difficulty": "HARD",
+   "leetcodeSlug": "word-ladder",
+   "videoId": "h9iTnkgv05E",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Reconstruct Itinerary",
+   "topic": "Advanced Graphs",
+   "difficulty": "HARD",
+   "leetcodeSlug": "reconstruct-itinerary",
+   "videoId": "ZyB_gQ8vqGA",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Min Cost to Connect All Points",
+   "topic": "Advanced Graphs",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "min-cost-to-connect-all-points",
+   "videoId": "f7JOBJIC-NA",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Network Delay Time",
+   "topic": "Advanced Graphs",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "network-delay-time",
+   "videoId": "EaphyqKU4PQ",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Swim In Rising Water",
+   "topic": "Advanced Graphs",
+   "difficulty": "HARD",
+   "leetcodeSlug": "swim-in-rising-water",
+   "videoId": "amvrKlMLuGY",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Alien Dictionary",
+   "topic": "Advanced Graphs",
+   "difficulty": "HARD",
+   "leetcodeSlug": "alien-dictionary",
+   "videoId": "6kTZYvNNyps",
+   "freeLink": "https://www.lintcode.com/problem/892/",
+   "premium": true,
+   "blind75": true
+  },
+  {
+   "title": "Cheapest Flights Within K Stops",
+   "topic": "Advanced Graphs",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "cheapest-flights-within-k-stops",
+   "videoId": "5eIK3zUdYmE",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Climbing Stairs",
+   "topic": "1-D Dynamic Programming",
+   "difficulty": "EASY",
+   "leetcodeSlug": "climbing-stairs",
+   "videoId": "Y0lT9Fck7qI",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Min Cost Climbing Stairs",
+   "topic": "1-D Dynamic Programming",
+   "difficulty": "EASY",
+   "leetcodeSlug": "min-cost-climbing-stairs",
+   "videoId": "ktmzAZWkEZ0",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "House Robber",
+   "topic": "1-D Dynamic Programming",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "house-robber",
+   "videoId": "73r3KWiEvyk",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "House Robber II",
+   "topic": "1-D Dynamic Programming",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "house-robber-ii",
+   "videoId": "rWAJCfYYOvM",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Longest Palindromic Substring",
+   "topic": "1-D Dynamic Programming",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "longest-palindromic-substring",
+   "videoId": "XYQecbcd6_c",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Palindromic Substrings",
+   "topic": "1-D Dynamic Programming",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "palindromic-substrings",
+   "videoId": "4RACzI5-du8",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Decode Ways",
+   "topic": "1-D Dynamic Programming",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "decode-ways",
+   "videoId": "6aEyTjOwlJU",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Coin Change",
+   "topic": "1-D Dynamic Programming",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "coin-change",
+   "videoId": "H9bfqozjoqs",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Maximum Product Subarray",
+   "topic": "1-D Dynamic Programming",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "maximum-product-subarray",
+   "videoId": "lXVy6YWFcRM",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Word Break",
+   "topic": "1-D Dynamic Programming",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "word-break",
+   "videoId": "Sx9NNgInc3A",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Longest Increasing Subsequence",
+   "topic": "1-D Dynamic Programming",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "longest-increasing-subsequence",
+   "videoId": "cjWnW0hdF1Y",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Partition Equal Subset Sum",
+   "topic": "1-D Dynamic Programming",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "partition-equal-subset-sum",
+   "videoId": "IsvocB5BJhw",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Unique Paths",
+   "topic": "2-D Dynamic Programming",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "unique-paths",
+   "videoId": "IlEsdxuD4lY",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Longest Common Subsequence",
+   "topic": "2-D Dynamic Programming",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "longest-common-subsequence",
+   "videoId": "Ua0GhsJSlWM",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Best Time to Buy And Sell Stock With Cooldown",
+   "topic": "2-D Dynamic Programming",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "best-time-to-buy-and-sell-stock-with-cooldown",
+   "videoId": "I7j0F7AHpb8",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Coin Change II",
+   "topic": "2-D Dynamic Programming",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "coin-change-ii",
+   "videoId": "Mjy4hd2xgrs",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Target Sum",
+   "topic": "2-D Dynamic Programming",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "target-sum",
+   "videoId": "g0npyaQtAQM",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Interleaving String",
+   "topic": "2-D Dynamic Programming",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "interleaving-string",
+   "videoId": "3Rw3p9LrgvE",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Longest Increasing Path In a Matrix",
+   "topic": "2-D Dynamic Programming",
+   "difficulty": "HARD",
+   "leetcodeSlug": "longest-increasing-path-in-a-matrix",
+   "videoId": "wCc_nd-GiEc",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Distinct Subsequences",
+   "topic": "2-D Dynamic Programming",
+   "difficulty": "HARD",
+   "leetcodeSlug": "distinct-subsequences",
+   "videoId": "-RDzMJ33nx8",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Edit Distance",
+   "topic": "2-D Dynamic Programming",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "edit-distance",
+   "videoId": "XYi2-LPrwm4",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Burst Balloons",
+   "topic": "2-D Dynamic Programming",
+   "difficulty": "HARD",
+   "leetcodeSlug": "burst-balloons",
+   "videoId": "VFskby7lUbw",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Regular Expression Matching",
+   "topic": "2-D Dynamic Programming",
+   "difficulty": "HARD",
+   "leetcodeSlug": "regular-expression-matching",
+   "videoId": "HAA8mgxlov8",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Maximum Subarray",
+   "topic": "Greedy",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "maximum-subarray",
+   "videoId": "5WZl3MMT0Eg",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Jump Game",
+   "topic": "Greedy",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "jump-game",
+   "videoId": "Yan0cv2cLy8",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Jump Game II",
+   "topic": "Greedy",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "jump-game-ii",
+   "videoId": "dJ7sWiOoK7g",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Gas Station",
+   "topic": "Greedy",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "gas-station",
+   "videoId": "lJwbPZGo05A",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Hand of Straights",
+   "topic": "Greedy",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "hand-of-straights",
+   "videoId": "amnrMCVd2YI",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Merge Triplets to Form Target Triplet",
+   "topic": "Greedy",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "merge-triplets-to-form-target-triplet",
+   "videoId": "kShkQLQZ9K4",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Partition Labels",
+   "topic": "Greedy",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "partition-labels",
+   "videoId": "B7m8UmZE-vw",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Valid Parenthesis String",
+   "topic": "Greedy",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "valid-parenthesis-string",
+   "videoId": "QhPdNS143Qg",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Insert Interval",
+   "topic": "Intervals",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "insert-interval",
+   "videoId": "A8NUOmlwOlM",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Merge Intervals",
+   "topic": "Intervals",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "merge-intervals",
+   "videoId": "44H3cEC2fFM",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Non Overlapping Intervals",
+   "topic": "Intervals",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "non-overlapping-intervals",
+   "videoId": "nONCGxWoUfM",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Meeting Rooms",
+   "topic": "Intervals",
+   "difficulty": "EASY",
+   "leetcodeSlug": "meeting-rooms",
+   "videoId": "PaJxqZVPhbg",
+   "freeLink": "https://www.lintcode.com/problem/920/",
+   "premium": true,
+   "blind75": true
+  },
+  {
+   "title": "Meeting Rooms II",
+   "topic": "Intervals",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "meeting-rooms-ii",
+   "videoId": "FdzJmTCVyJU",
+   "freeLink": "https://www.lintcode.com/problem/919/",
+   "premium": true,
+   "blind75": true
+  },
+  {
+   "title": "Minimum Interval to Include Each Query",
+   "topic": "Intervals",
+   "difficulty": "HARD",
+   "leetcodeSlug": "minimum-interval-to-include-each-query",
+   "videoId": "5hQ5WWW5awQ",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Rotate Image",
+   "topic": "Math & Geometry",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "rotate-image",
+   "videoId": "fMSJSS7eO1w",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Spiral Matrix",
+   "topic": "Math & Geometry",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "spiral-matrix",
+   "videoId": "BJnMZNwUk1M",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Set Matrix Zeroes",
+   "topic": "Math & Geometry",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "set-matrix-zeroes",
+   "videoId": "T41rL0L3Pnw",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Happy Number",
+   "topic": "Math & Geometry",
+   "difficulty": "EASY",
+   "leetcodeSlug": "happy-number",
+   "videoId": "ljz85bxOYJ0",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Plus One",
+   "topic": "Math & Geometry",
+   "difficulty": "EASY",
+   "leetcodeSlug": "plus-one",
+   "videoId": "jIaA8boiG1s",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Pow(x, n)",
+   "topic": "Math & Geometry",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "powx-n",
+   "videoId": "g9YQyYi4IQQ",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Multiply Strings",
+   "topic": "Math & Geometry",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "multiply-strings",
+   "videoId": "1vZswirL8Y8",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Detect Squares",
+   "topic": "Math & Geometry",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "detect-squares",
+   "videoId": "bahebearrDc",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Single Number",
+   "topic": "Bit Manipulation",
+   "difficulty": "EASY",
+   "leetcodeSlug": "single-number",
+   "videoId": "qMPX1AOa83k",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  },
+  {
+   "title": "Number of 1 Bits",
+   "topic": "Bit Manipulation",
+   "difficulty": "EASY",
+   "leetcodeSlug": "number-of-1-bits",
+   "videoId": "5Km3utixwZs",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Counting Bits",
+   "topic": "Bit Manipulation",
+   "difficulty": "EASY",
+   "leetcodeSlug": "counting-bits",
+   "videoId": "RyBM56RIWrM",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Reverse Bits",
+   "topic": "Bit Manipulation",
+   "difficulty": "EASY",
+   "leetcodeSlug": "reverse-bits",
+   "videoId": "UcoN6UjAI64",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Missing Number",
+   "topic": "Bit Manipulation",
+   "difficulty": "EASY",
+   "leetcodeSlug": "missing-number",
+   "videoId": "WnPLSRLSANE",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Sum of Two Integers",
+   "topic": "Bit Manipulation",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "sum-of-two-integers",
+   "videoId": "gVUrDV4tZfY",
+   "freeLink": null,
+   "premium": false,
+   "blind75": true
+  },
+  {
+   "title": "Reverse Integer",
+   "topic": "Bit Manipulation",
+   "difficulty": "MEDIUM",
+   "leetcodeSlug": "reverse-integer",
+   "videoId": "HAgLH58IgJQ",
+   "freeLink": null,
+   "premium": false,
+   "blind75": false
+  }
+ ]
+}

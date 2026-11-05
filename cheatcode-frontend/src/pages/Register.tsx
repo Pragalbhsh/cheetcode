@@ -1,70 +1,96 @@
-import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useState, type FormEvent } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { PasswordInput } from '../components/PasswordInput'
+import { Button, Field, inputClass } from '../components/ui'
+import { api, errorMessage } from '../lib/api'
+import { saveSession } from '../lib/auth'
+import type { AuthResponse } from '../lib/types'
+import { AuthShell } from './AuthShell'
+
+function validate(username: string, email: string, password: string): string | null {
+  if (!/^[A-Za-z0-9_]{3,20}$/.test(username)) return 'Username must be 3–20 characters: letters, numbers or underscores.'
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return 'Please enter a valid email address.'
+  if (password.length < 8) return 'Password must be at least 8 characters.'
+  return null
+}
 
 function Register() {
   const navigate = useNavigate()
-  const [email, setEmail] = useState('')
   const [username, setUsername] = useState('')
+  const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
+  const [loading, setLoading] = useState(false)
 
-  const handleRegister = async () => {
-    const res = await fetch('https://cheetcode-api.onrender.com/auth/register', {
-      method: 'POST', // POST request to the server to register the user
-      headers: { 'Content-Type': 'application/json' }, // headers are the additional information that are sent with the request like the data iam sending is json type.
-      body: JSON.stringify({ email, username, password }) // body is the data that is sent with the request
-    })
-
-    const data = await res.json() // get back the data from the server (token and userId)
-
-    if (data.token) {
-      localStorage.setItem('token', data.token)
-      localStorage.setItem('userId', data.userId)
-      navigate('/onboarding')
-    } else {
-      setError(data.error)
+  const handleSubmit = async (event: FormEvent) => {
+    event.preventDefault()
+    const problem = validate(username.trim(), email.trim(), password)
+    if (problem) {
+      setError(problem)
+      return
+    }
+    setError('')
+    setLoading(true)
+    try {
+      const session = await api<AuthResponse>('/auth/register', {
+        method: 'POST',
+        body: { username: username.trim(), email: email.trim(), password },
+      })
+      saveSession(session)
+      navigate('/onboarding', { replace: true })
+    } catch (err) {
+      setError(errorMessage(err))
+      setLoading(false)
     }
   }
 
   return (
-    <div className="min-h-screen bg-gray-950 flex items-center justify-center">
-      <div className="bg-gray-900 p-8 rounded-2xl w-full max-w-md shadow-xl">
-        <h1 className="text-3xl font-bold text-white mb-2">Create an account 🚀</h1>
-        <p className="text-gray-400 mb-8">Start your DSA revision journey</p>
-
-        <div className="flex flex-col gap-4">
+    <AuthShell title="Create your account 🚀" subtitle="Free forever. Takes 20 seconds.">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-4" noValidate>
+        <Field label="Username" hint="3–20 letters, numbers or underscores">
           <input
-            type="text"
-            placeholder="Username"
+            autoFocus
+            autoComplete="username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-            className="bg-gray-800 text-white px-4 py-3 rounded-xl outline-none focus:ring-2 focus:ring-indigo-500"
+            className={inputClass}
+            placeholder="ada_codes"
           />
+        </Field>
+        <Field label="Email">
           <input
             type="email"
-            placeholder="Email"
+            autoComplete="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="bg-gray-800 text-white px-4 py-3 rounded-xl outline-none focus:ring-2 focus:ring-indigo-500"
+            className={inputClass}
+            placeholder="you@example.com"
           />
-          <input
-            type="password"
-            placeholder="Password"
+        </Field>
+        <Field label="Password" hint="At least 8 characters">
+          <PasswordInput
+            autoComplete="new-password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="bg-gray-800 text-white px-4 py-3 rounded-xl outline-none focus:ring-2 focus:ring-indigo-500"
+            placeholder="Choose a password"
           />
-          {error && <p className="text-red-400 text-sm">{error}</p>}
-          <button onClick={handleRegister} className="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 rounded-xl transition">
-            Register
-          </button>
-          <p className="text-gray-400 text-center text-sm">
-            Already have an account?{' '}
-            <span onClick={() => navigate('/login')} className="text-indigo-400 cursor-pointer hover:underline">Login</span>
+        </Field>
+        {error && (
+          <p role="alert" className="text-sm text-rose-300">
+            {error}
           </p>
-        </div>
-      </div>
-    </div>
+        )}
+        <Button type="submit" size="lg" loading={loading} className="mt-1">
+          Create account
+        </Button>
+        <p className="text-center text-sm text-zinc-400">
+          Already have an account?{' '}
+          <Link to="/login" className="font-medium text-indigo-300 hover:underline">
+            Log in
+          </Link>
+        </p>
+      </form>
+    </AuthShell>
   )
 }
 

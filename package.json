@@ -1,19 +1,37 @@
 {
   "name": "cheetcode",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "Cheatcode API: spaced-repetition revision for the NeetCode 150",
+  "main": "dist/index.js",
   "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "start": "node dist/index.js"
+    "dev": "tsx watch src/index.ts",
+    "build": "prisma generate && tsc",
+    "start": "prisma migrate deploy && node dist/index.js",
+    "start:server": "node dist/index.js",
+    "seed": "tsx src/seed.ts",
+    "seed:prod": "node dist/seed.js",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "postinstall": "prisma generate"
+  },
+  "prisma": {
+    "seed": "tsx src/seed.ts"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Pragalbhsh/cheetcode.git"
   },
-  "keywords": [],
+  "keywords": [
+    "dsa",
+    "leetcode",
+    "neetcode",
+    "spaced-repetition",
+    "sm-2"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -22,13 +40,12 @@
   "homepage": "https://github.com/Pragalbhsh/cheetcode#readme",
   "dependencies": {
     "@prisma/client": "^5.22.0",
-    "@tailwindcss/vite": "^4.3.0",
     "bcrypt": "^6.0.0",
     "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
-    "prisma": "^5.22.0",
-    "tailwindcss": "^4.3.0"
+    "prisma": "^5.22.0"
   },
   "devDependencies": {
     "@types/bcrypt": "^6.0.0",
@@ -36,8 +53,6 @@
     "@types/express": "^5.0.6",
     "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^25.9.1",
-    "dotenv": "^17.4.2",
-    "ts-node": "^10.9.2",
     "tsx": "^4.22.3",
     "typescript": "^6.0.3"
   }
